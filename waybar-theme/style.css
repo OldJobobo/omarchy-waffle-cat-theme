@@ -1,0 +1,313 @@
+@import "../omarchy/current/theme/waybar.css";
+
+@define-color color0 #2c282c;
+@define-color color1 #3a2d32;
+@define-color color2 #4a3a40;
+@define-color color3 #7a6a60;
+@define-color color4 #b6a78f;
+@define-color color5 #efb159;
+@define-color color6 #f7dd9b;
+@define-color color7 #fff3cf;
+@define-color color8 #ff8c68;
+@define-color color9 #834f36;
+@define-color color10 #f0e65a;
+@define-color color11 #a4a900;
+@define-color color12 #ffbe55;
+@define-color color13 #c7f3ff;
+@define-color color14 #c5a0b6;
+@define-color color15 #e88f37;
+@define-color module-bg #222222;
+
+* {
+  background: transparent;
+  color: @color0;
+  border: none;
+  min-height: 0;
+  font-family: 'JetBrainsMono Nerd Font Propo';
+  font-size: 14px;
+  
+  letter-spacing: 0.75px;
+}
+
+window#waybar {
+  background: transparent; 
+}
+
+#waybar > box {
+  margin: 4px 4px 2px 4px;
+  transition: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.modules-left {
+  padding: 0px 0px 0px;
+  margin: 0px 0px;
+}
+
+.modules-right {
+  padding: 0px 0px 0px;
+  margin: 0px 0px;
+}
+
+.modules-center {
+  border-color: transparent;
+}
+
+#workspaces {
+  background: @color0;
+  margin: 4px 4px 0px 4px;
+  padding: 0px 4px 0px 4px;
+  border-radius: 999px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+#workspaces button {
+  padding: 4px 10px 4px 10px;
+  margin: 6px 2px 6px 2px;
+  border-radius: 999px;
+  background: alpha(@color3, 0.85);
+  color: @color7;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.95);
+  transition: all 0.15s ease-in-out;
+  font-size: 14px;
+}
+
+#workspaces button label {
+  color: @color13;
+}
+
+#workspaces button.active {
+  background: @color6;
+  color: @color9;
+}
+
+#workspaces button.active label {
+  color: @color9;
+}
+
+#workspaces button:hover {
+  color: @color13;
+}
+
+#workspaces button.empty {
+  opacity: 0.55;
+  border-color: alpha(@color13, 0.6);
+  color: alpha(@color13, 0.6);
+}
+
+#workspaces button.empty label {
+  color: alpha(@color13, 0.6);
+}
+
+#tray,
+#mpris,
+#cpu,
+#clock,
+#battery,
+#network,
+#memory,
+#backlight,
+#bluetooth,
+#pulseaudio,
+#custom-weather,
+#custom-update,
+#idle_inhibitor,
+#custom-expand-icon,
+#custom-omarchy,
+#custom-screenrecording-indicator,
+#custom-updatespacman {
+  min-width: 20px;
+  margin: 4px 4px 0px 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 999px;
+  background: alpha(@color0, 0.85);
+  font-size: 16px;
+  border: none;
+  color: @color0;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.8);
+}
+
+#custom-expand-icon {
+  background: alpha(@color0, 0.85);
+  min-width: 10px;
+  border: none;
+  border-radius: 999px;
+  color: @color13;
+  font-size: 20px;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.8);
+}
+
+#custom-omarchy {
+  padding: 0px 10px 0px 10px;
+  color: @color6;
+  text-shadow: none;
+  font-size: 22px;
+}
+
+#custom-update,
+#custom-updatespacman {
+  border-color: @color10;
+  color: @color10;
+}
+
+#clock {
+  border-color: @color10;
+  color: @color6;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+#idle_inhibitor {
+  color: @color4;
+  font-size: 22px;
+}
+
+#idle_inhibitor.activated {
+  color: @color8;
+}
+
+#idle_inhibitor.deactivated {
+  border-color: @color4;
+}
+
+#tray {
+  color: @color13;
+  background: alpha(@color0, 0.85);
+  border-radius: 999px;
+  border: none;
+  font-size: 22px;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.8);
+}
+
+#custom-tray-cap {
+  min-width: 4px;
+  background: alpha(@color0, 0.85);
+  color: @color13;
+  font-size: 22px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+  color: alpha(@color13, 0.6);
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  color: @color9;
+}
+
+#tray * {
+  color: @color13;
+  font-size: 22px;
+}
+
+
+#network {
+  color: @color13;
+  font-size: 22px;
+}
+
+#pulseaudio {
+  border-color: @color5;
+  color: @color5;
+  font-size: 22px;
+}
+
+#backlight {
+  border-color: @color4;
+  color: @color4;
+  font-size: 22px;
+}
+
+#battery {
+  border-color: @color7;
+  color: @color7;
+  font-size: 22px;
+}
+
+#battery.warning,
+#battery.critical {
+  border-color: @color9;
+  color: @color9;
+  font-size: 22px;
+}
+
+#cpu,
+#memory {
+  border-color: @color3;
+  color: @color5;
+}
+
+#memory {
+  border-color: @color2;
+  color: @color11;
+}
+
+#mpris {
+  border-color: @color12;
+  color: @color12;
+  animation: none;
+  font-size: 14px;
+}
+
+#window {
+  border-color: @color11;
+  color: @color11;
+}
+
+#window label {
+  color: @color11;
+}
+
+#bluetooth {
+  border-color: @color6;
+  color: @color6;
+  font-size: 22px;
+}
+
+#custom-weather {
+  border-color: @color11;
+  color: @color11;
+  font-size: 16px;
+}
+
+#custom-screenrecording-indicator {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-color: @color9;
+  color: alpha(@color9, 0.5);
+  font-size: 22px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: @color9;
+  animation-name: ember-blink;
+  animation-duration: 0.65s;
+  font-size: 22px;
+}
+
+tooltip {
+  padding: 6px 8px;
+  background: alpha(@color4, 0.95);
+  border: 1px solid alpha(@color0, 0.25);
+  border-radius: 8px;
+  font-size: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+tooltip label {
+  color: @color0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@keyframes ember-blink {
+  to {
+    color: alpha(@color0, 0.2);
+  }
+}

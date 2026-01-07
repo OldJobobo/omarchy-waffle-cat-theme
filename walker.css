@@ -1,0 +1,24 @@
+@define-color selected-text #fece6e;
+@define-color text #e5d0dc;
+@define-color base #292025;
+@define-color border #f0e65a;
+@define-color foreground #e5d0dc;
+@define-color background #292025;
+
+window {
+    background-color: transparent;
+    color: @text;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+/* Walker Window Border */
+window .box-wrapper {
+    border-radius: 16px;
+    border: 2px solid alpha(@border, 0.7);  
+    padding: 18px 22px;
+    background: @base;
+    background-clip: padding-box;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 1);
+}
