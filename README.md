@@ -18,8 +18,6 @@ omarchy theme install /path/to/omarchy-waffle-cat-theme
 
 ## Wallpapers
 
-Grid preview of the `backgrounds` folder:
-
 <table>
   <tr>
     <td><img src="backgrounds/1_waffle.png" width="220" alt="1_waffle"></td>
