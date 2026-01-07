@@ -13,7 +13,7 @@ I created the Waffle-Cat colorscheme, which you can find here: https://github.co
 Use the normal Omarchy theme install method:
 
 ```bash
-omarchy theme install /path/to/omarchy-waffle-cat-theme
+omarchy theme install https://github.com/OldJobobo/omarchy-waffle-cat-theme
 ```
 
 ## Wallpapers
