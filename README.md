@@ -6,7 +6,7 @@ I created the Waffle-Cat colorscheme, which you can find here: https://github.co
 
 ## Preview
 
-![Theme preview](backgrounds/1_waffle.png)
+![Theme preview](preview.png)
 
 ## Install
 
@@ -20,11 +20,35 @@ omarchy theme install /path/to/omarchy-waffle-cat-theme
 
 Grid preview of the `backgrounds` folder:
 
-| | | |
-| --- | --- | --- |
-| ![1_waffle](backgrounds/1_waffle.png) | ![2_cat](backgrounds/2_cat.jpg) | ![3_vending_machine_girl](backgrounds/3_vending_machine_girl.jpg) |
-| ![4_winged_girl_sunset](backgrounds/4_winged_girl_sunset.jpg) | ![5_glowing_rectangle](backgrounds/5_glowing_rectangle.jpg) | ![6_cozy_desk_room](backgrounds/6_cozy_desk_room.jpg) |
-| ![7_rust_cookbook_girl](backgrounds/7_rust_cookbook_girl.jpg) | ![8_sunset_field](backgrounds/8_sunset_field.jpg) | ![9_staircase_girl](backgrounds/9_staircase_girl.jpg) |
-| ![10_autumn_camping](backgrounds/10_autumn_camping.png) | ![11_evening_street_girls-2](backgrounds/11_evening_street_girls-2.jpg) | ![12_drawing_close_up](backgrounds/12_drawing_close_up.jpg) |
-| ![13_desert_nomads](backgrounds/13_desert_nomads.jpg) | ![14_pink_dress_girl](backgrounds/14_pink_dress_girl.jpg) | ![15_pastel_street](backgrounds/15_pastel_street.jpeg) |
-| ![16_helmet_girl](backgrounds/16_helmet_girl.png) | ![17_bby9mjvbr41a1](backgrounds/17_bby9mjvbr41a1.webp) |  |
+<table>
+  <tr>
+    <td><img src="backgrounds/1_waffle.png" width="220" alt="1_waffle"></td>
+    <td><img src="backgrounds/2_cat.jpg" width="220" alt="2_cat"></td>
+    <td><img src="backgrounds/3_vending_machine_girl.jpg" width="220" alt="3_vending_machine_girl"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/4_winged_girl_sunset.jpg" width="220" alt="4_winged_girl_sunset"></td>
+    <td><img src="backgrounds/5_glowing_rectangle.jpg" width="220" alt="5_glowing_rectangle"></td>
+    <td><img src="backgrounds/6_cozy_desk_room.jpg" width="220" alt="6_cozy_desk_room"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/7_rust_cookbook_girl.jpg" width="220" alt="7_rust_cookbook_girl"></td>
+    <td><img src="backgrounds/8_sunset_field.jpg" width="220" alt="8_sunset_field"></td>
+    <td><img src="backgrounds/9_staircase_girl.jpg" width="220" alt="9_staircase_girl"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/10_autumn_camping.png" width="220" alt="10_autumn_camping"></td>
+    <td><img src="backgrounds/11_evening_street_girls-2.jpg" width="220" alt="11_evening_street_girls-2"></td>
+    <td><img src="backgrounds/12_drawing_close_up.jpg" width="220" alt="12_drawing_close_up"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/13_desert_nomads.jpg" width="220" alt="13_desert_nomads"></td>
+    <td><img src="backgrounds/14_pink_dress_girl.jpg" width="220" alt="14_pink_dress_girl"></td>
+    <td><img src="backgrounds/15_pastel_street.jpeg" width="220" alt="15_pastel_street"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/16_helmet_girl.png" width="220" alt="16_helmet_girl"></td>
+    <td><img src="backgrounds/17_bby9mjvbr41a1.webp" width="220" alt="17_bby9mjvbr41a1"></td>
+    <td></td>
+  </tr>
+</table>
