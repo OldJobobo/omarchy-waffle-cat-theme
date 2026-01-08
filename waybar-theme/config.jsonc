@@ -13,10 +13,10 @@
   "modules-center": [
     "custom/weather",
     "hyprland/workspaces",
-    "idle_inhibitor"
+    "idle_inhibitor",
+    "custom/update"
   ],
   "modules-right": [
-    "custom/update",
     "custom/screenrecording-indicator",
     "group/tray-expander",
     "bluetooth",
