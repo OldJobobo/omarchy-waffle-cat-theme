@@ -4,7 +4,10 @@
 @define-color border #f0e65a;
 @define-color foreground #e5d0dc;
 @define-color background #292025;
+@define-color hover #f0e65a;
+@define-color selected-box #ff8c68;
 
+/*
 window {
     background-color: transparent;
     color: @text;
@@ -12,13 +15,46 @@ window {
     padding: 0;
     box-shadow: none;
 }
-
-/* Walker Window Border */
+*/
 window .box-wrapper {
     border-radius: 16px;
-    border: 2px solid alpha(@border, 0.7);  
-    padding: 18px 22px;
-    background: @base;
+    border: 2px solid alpha(@border, 0.75);
+    padding: 18px 32px;
+    background: alpha(@base, 0.9);
     background-clip: padding-box;
-    box-shadow: 2px 2px 18px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 22px rgba(0, 0, 0, 0.9);
+}
+
+
+window .search-container,
+window .search {
+  background: alpha(@base, 0.6);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+  color: @foreground;
+  border: 1px solid alpha(@border, 0.8); 
+  border-radius: 10px;
+  padding: 16px 24px;
+  margin-top: 1px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+child:selected {
+  border-radius: 10px;
+  background-color: alpha(@selected-box, 0.2); 
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  transition: background-color 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+child:selected .item-box {
+  transition: transform 0.14s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateX(6px);
+}
+
+child:selected .item-box * {
+  color: @selected-text;                  }
+
+child:hover {
+  background-color: alpha(@hover, 0.1);
+  color: @hover;
 }
