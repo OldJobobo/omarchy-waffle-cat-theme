@@ -1,29 +1,479 @@
 /**
-* @name base16 Discord
-* @author @bypass_
+* @name Omarchy Waffle Cat Vencord
+* @author @oldjobobo
 * @version 0.1.0
-* @description Built using Aether and Pywal
-* @source https://github.com/imbypass/base16-Discord
+* @description Warm waffles + fuzzy orange cat vibes (flat, rounded)
 **/
 
-/* import the parent */
-@import url('https://imbypass.github.io/base16-discord/omarchy-discord.theme.css');
+/* Optional font import (comment out if you don't want a custom font) */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap");
 
 :root {
-    --color00: #292025;
-    --color01: #3a2d32;
-    --color02: #4a3a40;
-    --color03: #7a6a60;
-    --color04: #fece6e;
-    --color05: #efb159;
-    --color06: #f7dd9b;
-    --color07: #fff3cf;
-    --color08: #834f36;
-    --color09: #ff8c68;
-    --color10: #f0e65a;
-    --color11: #a4a900;
-    --color12: #ffbe55;
-    --color13: #c7f3ff;
-    --color14: #c5a0b6;
-    --color15: #e88f37;
+  /* Base16 palette */
+  --color00: #292025;
+  --color01: #3a2d32;
+  --color02: #4a3a40;
+  --color03: #7a6a60;
+  --color04: #fece6e;
+  --color05: #efb159;
+  --color06: #f7dd9b;
+  --color07: #fff3cf;
+  --color08: #834f36;
+  --color09: #ff8c68;
+  --color10: #f0e65a;
+  --color11: #a4a900;
+  --color12: #ffbe55;
+  --color13: #c7f3ff;
+  --color14: #c5a0b6;
+  --color15: #e88f37;
+
+  /* Soft rounded corners */
+  --eh-radius-sm: 8px;
+  --eh-radius-md: 12px;
+  --eh-radius-lg: 16px;
+
+  /* Item color mapping */
+  --item-surface-0: var(--color00);
+  --item-surface-1: var(--color01);
+  --item-surface-2: var(--color02);
+  --item-surface-3: var(--color03);
+  --item-surface-4: var(--color03);
+
+  --item-text: var(--color07);
+  --item-text-muted: var(--color03);
+  --item-text-contrast: var(--color07);
+  --item-text-inverse: var(--item-surface-1);
+
+  --item-accent: var(--color04);
+  --item-accent-strong: var(--color15);
+  --item-danger: var(--color09);
+  --item-highlight: var(--color10);
+  --item-unread: var(--color12);
+
+  --item-mention-glow-1: var(--color15);
+  --item-mention-glow-2: var(--color04);
+  --item-mention-glow-3: var(--color10);
+
+  --item-message-text: var(--item-text);
+  --item-channel-name: var(--color02);
+  --item-channel-name-unread: var(--color07);
+  --item-channel-name-selected: var(--item-accent);
+  --item-username: var(--color15);
+  --item-mention-foreground: var(--item-text);
+  --item-mention-text: var(--item-text);
+
+  --item-border: color-mix(in srgb, var(--item-surface-4) 45%, transparent);
+  --item-accent-dim: color-mix(in srgb, var(--item-accent) 55%, var(--item-surface-1));
+
+  /* UI surfaces (bridge vars) */
+  --eh-0: var(--item-surface-0);
+  --eh-1: var(--item-surface-1);
+  --eh-2: var(--item-surface-2);
+  --eh-3: var(--item-surface-3);
+  --eh-4: var(--item-surface-4);
+  --eh-border: var(--item-border);
+  --eh-gap: 12px;
+
+  --eh-accent: var(--item-accent);
+  --eh-accent-strong: var(--item-accent-strong);
+  --eh-danger: var(--item-danger);
+  --eh-accent-dim: var(--item-accent-dim);
+
+  --font-primary: "Figtree", "gg sans", sans-serif;
+  --font-display: "Figtree", "gg sans", sans-serif;
+  --eh-letter-spacing: 0.35px;
+}
+
+.theme-dark,
+.theme-darker,
+.theme-midnight,
+.visual-refresh {
+  /* Backgrounds */
+  --background-primary: var(--item-surface-1) !important;
+  --background-secondary: var(--item-surface-0) !important;
+  --background-secondary-alt: var(--item-surface-1) !important;
+  --background-tertiary: var(--item-surface-0) !important;
+  --background-accent: var(--item-surface-2) !important;
+  --background-floating: var(--item-surface-2) !important;
+
+  --background-base-lowest: var(--item-surface-0) !important;
+  --background-base-lower: var(--item-surface-0) !important;
+  --background-base-low: var(--item-surface-1) !important;
+  --background-base-tertiary: var(--item-surface-0) !important;
+
+  --background-surface-high: var(--item-surface-2) !important;
+  --background-surface-higher: var(--item-surface-2) !important;
+  --background-surface-highest: var(--item-surface-3) !important;
+  --bg-surface-raised: var(--item-surface-2) !important;
+  --bg-surface-overlay: var(--item-surface-1) !important;
+  --bg-base-secondary: var(--item-surface-0) !important;
+  --bg-base-tertiary: var(--item-surface-0) !important;
+  --bg-overlay-2: var(--item-surface-2) !important;
+  --bg-overlay-3: var(--item-surface-3) !important;
+
+  /* Modifiers */
+  --background-modifier-accent: color-mix(in srgb, var(--item-surface-3) 65%, transparent) !important;
+  --background-modifier-hover: color-mix(in srgb, var(--item-surface-3) 70%, transparent) !important;
+  --background-modifier-active: color-mix(in srgb, var(--item-surface-3) 82%, transparent) !important;
+  --background-modifier-selected: color-mix(in srgb, var(--item-surface-3) 90%, transparent) !important;
+  --background-mentioned: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--item-accent) 22%, var(--item-surface-1)) 0%,
+    var(--item-surface-1) 100%
+  ) !important;
+  --background-mentioned-hover: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--item-accent) 32%, var(--item-surface-1)) 0%,
+    var(--item-surface-1) 100%
+  ) !important;
+  --mention-background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--item-accent) 28%, var(--item-surface-1)) 0%,
+    var(--item-surface-1) 100%
+  ) !important;
+  --mention-foreground: var(--item-mention-foreground) !important;
+
+  /* Text */
+  --text-normal: var(--item-text) !important;
+  --text-muted: var(--item-text-muted) !important;
+  --text-primary: var(--item-text) !important;
+  --text-secondary: color-mix(in srgb, var(--item-text) 75%, var(--item-text-muted)) !important;
+  --header-primary: var(--item-text) !important;
+  --header-secondary: color-mix(in srgb, var(--item-text) 75%, var(--item-text-muted)) !important;
+  --interactive-normal: var(--item-text) !important;
+  --interactive-hover: var(--item-text-contrast) !important;
+  --interactive-active: var(--item-text-contrast) !important;
+  --interactive-muted: var(--item-text-muted) !important;
+
+  /* Channel list text */
+  --channels-default: var(--item-channel-name) !important;
+  --channels-default-muted: color-mix(in srgb, var(--item-channel-name) 55%, transparent) !important;
+  --channels-default-unread: var(--item-channel-name-unread) !important;
+
+  /* Accents */
+  --brand-500: var(--item-accent) !important;
+  --brand-560: color-mix(in srgb, var(--item-accent) 18%, var(--item-surface-1)) !important;
+  --text-link: var(--item-accent) !important;
+  --channel-icon: var(--item-accent) !important;
+  --focus-primary: var(--item-highlight) !important;
+  --input-border-focus: var(--item-highlight) !important;
+
+  /* Buttons */
+  --button-filled-brand-background: color-mix(in srgb, var(--item-accent) 65%, var(--item-surface-1)) !important;
+  --button-filled-brand-background-hover: color-mix(in srgb, var(--item-accent) 75%, var(--item-surface-1)) !important;
+  --button-filled-brand-text: var(--item-text-inverse) !important;
+
+  --button-positive-background: color-mix(in srgb, var(--item-accent) 65%, var(--item-surface-1)) !important;
+  --button-positive-background-hover: color-mix(in srgb, var(--item-accent) 75%, var(--item-surface-1)) !important;
+  --button-positive-text: var(--item-text-inverse) !important;
+
+  --button-secondary-background: var(--item-surface-3) !important;
+  --button-secondary-background-hover: var(--item-surface-2) !important;
+  --button-secondary-text: var(--item-text) !important;
+
+  --button-danger-background: var(--item-danger) !important;
+  --button-danger-background-hover: color-mix(in srgb, var(--item-danger) 85%, white) !important;
+  --button-danger-text: var(--item-text-inverse) !important;
+
+  /* Status */
+  --status-positive: var(--item-accent) !important;
+  --status-warning: var(--item-accent) !important;
+  --status-danger: var(--item-danger) !important;
+}
+
+body {
+  letter-spacing: var(--eh-letter-spacing);
+}
+
+/* Username color */
+[class*="username"] {
+  color: var(--item-username) !important;
+}
+
+/* Message text force */
+.theme-dark :is([class*="messageContent"], [class*="markup"]),
+.theme-darker :is([class*="messageContent"], [class*="markup"]),
+.theme-midnight :is([class*="messageContent"], [class*="markup"]),
+.visual-refresh :is([class*="messageContent"], [class*="markup"]) {
+  color: var(--item-message-text) !important;
+}
+
+/* Channel row accents */
+a[data-list-item-id^="channels___"][aria-selected="true"] {
+  background-color: var(--background-modifier-selected) !important;
+  box-shadow: inset 3px 0 0 0 var(--item-accent) !important;
+  border-radius: var(--eh-radius-md) !important;
+}
+
+a[data-list-item-id^="channels___"]:hover {
+  background-color: var(--background-modifier-hover) !important;
+  box-shadow: inset 3px 0 0 0 var(--item-danger) !important;
+  border-radius: var(--eh-radius-md) !important;
+}
+
+/* Channel icon base */
+a[data-list-item-id^="channels___"] svg,
+a[data-list-item-id^="channels___"] svg path {
+  fill: var(--item-accent-dim) !important;
+  color: var(--item-accent-dim) !important;
+}
+
+/* Unread channel icon */
+a[data-list-item-id^="channels___"][class*="modeUnread"] svg,
+a[data-list-item-id^="channels___"][class*="modeUnread"] svg path,
+[class*="modeUnread"] [class*="icon__"],
+[class*="modeUnread"] [class*="icon__"] path {
+  fill: var(--item-accent) !important;
+  color: var(--item-accent) !important;
+}
+
+/* Channel name states */
+a[data-list-item-id^="channels___"]:not([class*="modeUnread"]):not([aria-selected="true"]) [class*="name"] *,
+li[class*="containerDefault"]:not([class*="modeUnread"]):not([class*="selected"]):not([class*="modeSelected"]) [class*="name"] *,
+#channels [class*="name__"] {
+  color: var(--item-channel-name) !important;
+}
+
+a[data-list-item-id^="channels___"][class*="modeUnread"] [class*="name"] *,
+li[class*="containerDefault"][class*="modeUnread"] [class*="name"] *,
+#channels [class*="modeUnread"] [class*="name__"] {
+  color: var(--item-channel-name-unread) !important;
+}
+
+#channels [class*="modeSelected"] [class*="name__"] {
+  color: var(--item-channel-name-selected) !important;
+}
+
+/* Text input focus ring */
+[class*="channelTextArea"]:focus-within {
+  box-shadow: 0 0 0 1px var(--item-highlight) inset !important;
+  border-color: var(--item-highlight) !important;
+}
+
+[class*="channelTextArea"]:focus-within [class*="scrollableContainer"] {
+  box-shadow: none !important;
+  border-color: inherit !important;
+}
+
+/* Mention highlight */
+div[class*="mentioned"],
+li[class*="mentioned"] {
+  background: var(--background-mentioned) !important;
+  box-shadow: none !important;
+  border-left: 3px solid var(--item-accent) !important;
+  border-radius: var(--eh-radius-md) !important;
+  position: relative;
+}
+
+div[class*="mentioned"]:hover,
+li[class*="mentioned"]:hover {
+  background: var(--background-mentioned-hover) !important;
+}
+
+div[class*="mentioned"]::before,
+li[class*="mentioned"]::before {
+  content: none !important;
+}
+
+/* Replying highlight */
+div[class*="replying"],
+li[class*="replying"] {
+  background: var(--background-mentioned) !important;
+  box-shadow: none !important;
+  border-left: 3px solid var(--item-unread) !important;
+  border-radius: var(--eh-radius-md) !important;
+  position: relative;
+}
+
+div[class*="replying"]:hover,
+li[class*="replying"]:hover {
+  background: var(--background-mentioned-hover) !important;
+}
+
+div[class*="replying"]::before,
+li[class*="replying"]::before {
+  content: none !important;
+}
+
+/* Message hover rounding */
+[id^="chat-messages-"] [class*="messageListItem"]:hover,
+[id^="chat-messages-"] [class*="messageListItem"]:hover > [class*="message"],
+[id^="chat-messages-"] [class*="messageListItem"]:hover [class*="contents"] {
+  background: var(--background-modifier-hover) !important;
+  border-radius: var(--eh-radius-md) !important;
+}
+
+/* Unread indicators and badges */
+div[class*="unreadBar"],
+span[class*="unreadBar"],
+div[class*="unreadPill"],
+span[class*="unreadPill"],
+div[class*="numberBadge"],
+span[class*="numberBadge"],
+div[class*="textBadge"],
+span[class*="textBadge"],
+div.unread__2ea32.unreadImportant__2ea32 {
+  background-color: var(--item-unread) !important;
+  color: var(--item-surface-1) !important;
+}
+
+/* New messages bar (scoped) */
+/* Readability-focused bar (explicit selector for stability) */
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.page__5e434 > div > div > div.content_f75fb0 > main > div.messagesWrapper__36d07.group-spacing-8 > div.newMessagesBar__0f481.barBase__0f481 {
+  background: color-mix(in srgb, var(--item-surface-0) 90%, var(--item-unread) 10%) !important;
+  border: 1px solid color-mix(in srgb, var(--item-unread) 35%, transparent) !important;
+  color: var(--item-text) !important;
+  border-radius: 999px !important;
+  padding: 6px 12px !important;
+  height: auto !important;
+  min-height: 28px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  box-shadow: none !important;
+}
+
+div#---new-messages-bar.divider__5126c {
+  --divider-color: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+}
+
+div#---new-messages-bar.divider__5126c.hasContent__5126c {
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      color-mix(in srgb, var(--item-unread) 35%, transparent) 20%,
+      color-mix(in srgb, var(--item-unread) 35%, transparent) 70%,
+      transparent 84%,
+      transparent 100%
+    ) !important;
+  border-radius: var(--eh-radius-lg) !important;
+  padding: 4px 54px 4px 10px !important;
+  margin: 14px 0 6px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 {
+  --divider-color: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .content__908e2 {
+  background: color-mix(in srgb, var(--item-surface-1) 82%, var(--item-unread) 18%) !important;
+  border: 1px solid color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+  color: var(--item-unread) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  font-weight: 600 !important;
+  padding: 4px 10px !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPill__908e2 {
+  background-image: linear-gradient(
+    120deg,
+    color-mix(in srgb, var(--item-mention-glow-1) 55%, var(--item-surface-1)) 0%,
+    color-mix(in srgb, var(--item-mention-glow-2) 55%, var(--item-surface-1)) 50%,
+    color-mix(in srgb, var(--item-mention-glow-3) 45%, var(--item-surface-1)) 100%
+  ) !important;
+  color: var(--item-mention-text) !important;
+  border: 1px solid color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+  border-radius: 999px !important;
+  padding: 0 8px !important;
+  height: 16px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  font-size: 10px !important;
+  transform: translateY(1px) !important;
+  box-shadow: none !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPillCapStroke__908e2 {
+  stroke: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPillCap__908e2,
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPillCap__908e2 path {
+  fill: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+  color: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+  stroke: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPillCap__908e2,
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPillCap__908e2 * {
+  display: none !important;
+}
+
+/* Unread mentions footer pill */
+div[class*="unreadMentionsIndicatorBottom"] > div {
+  background: color-mix(in srgb, var(--item-surface-1) 82%, var(--item-unread) 18%) !important;
+  color: var(--item-unread) !important;
+  border: 1px solid color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+}
+
+/* Jump to present / new messages pill */
+button[class*="jumpToPresentBar"],
+div[class*="jumpToPresentBar"] {
+  background: color-mix(in srgb, var(--item-surface-1) 82%, var(--item-unread) 18%) !important;
+  border-color: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+  color: var(--item-unread) !important;
+}
+
+/* Mention count pills */
+span[class*="mention"],
+span[class*="mention"] span {
+  background-color: var(--item-unread) !important;
+  color: var(--item-surface-1) !important;
+}
+
+/* Inline @mention pills */
+.theme-dark :is([class*="messageContent"], [class*="markup"]) [class*="mention"],
+.theme-darker :is([class*="messageContent"], [class*="markup"]) [class*="mention"],
+.theme-midnight :is([class*="messageContent"], [class*="markup"]) [class*="mention"],
+.visual-refresh :is([class*="messageContent"], [class*="markup"]) [class*="mention"] {
+  background-image: linear-gradient(
+    120deg,
+    color-mix(in srgb, var(--item-mention-glow-1) 55%, var(--item-surface-1)) 0%,
+    color-mix(in srgb, var(--item-mention-glow-2) 55%, var(--item-surface-1)) 50%,
+    color-mix(in srgb, var(--item-mention-glow-3) 45%, var(--item-surface-1)) 100%
+  ) !important;
+  color: var(--item-mention-text) !important;
+  border: 1px solid color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+  box-shadow: none !important;
+  border-radius: 999px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  line-height: 1.4 !important;
+  padding: 0.12em 0.55em !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px !important;
+  vertical-align: baseline !important;
+  text-shadow: none !important;
+}
+
+.theme-dark :is([class*="messageContent"], [class*="markup"]) [class*="mention"]:hover,
+.theme-darker :is([class*="messageContent"], [class*="markup"]) [class*="mention"]:hover,
+.theme-midnight :is([class*="messageContent"], [class*="markup"]) [class*="mention"]:hover,
+.visual-refresh :is([class*="messageContent"], [class*="markup"]) [class*="mention"]:hover {
+  background-image: linear-gradient(
+    120deg,
+    color-mix(in srgb, var(--item-mention-glow-1) 70%, var(--item-surface-1)) 0%,
+    color-mix(in srgb, var(--item-mention-glow-2) 70%, var(--item-surface-1)) 50%,
+    color-mix(in srgb, var(--item-mention-glow-3) 60%, var(--item-surface-1)) 100%
+  ) !important;
+  border-color: color-mix(in srgb, var(--item-unread) 75%, transparent) !important;
+  box-shadow: none !important;
+}
+
+/* Thread/voice active indicators */
+span[class*="live"],
+span[class*="live"] span,
+div[class*="activity"] span[class*="dot"] {
+  background-color: var(--item-unread) !important;
+  color: var(--item-surface-1) !important;
 }
