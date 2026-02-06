@@ -1,8 +1,6 @@
 # Omarchy Waffle Cat Theme
 
-Waffle Cat captures the comfort of a buttered waffle breakfast with a sunlit tabby purring on your lap. Its warm tones and understated accents create a soothing workspace without sacrificing clarity and contrast.
-
-I created the Waffle-Cat colorscheme, which you can find here: https://github.com/OldJobobo/waffle-cat.
+Waffle Cat captures the comfort of a buttered waffle breakfast with a sunlit tabby purring on your lap. Warm amber tones and soft neutrals create a calm workspace without sacrificing clarity and contrast.
 
 ## Preview
 
@@ -10,17 +8,28 @@ I created the Waffle-Cat colorscheme, which you can find here: https://github.co
 
 ## Install
 
-Use the normal Omarchy theme install method:
+Use the Omarchy theme installer:
 
 ```bash
 omarchy-theme-install https://github.com/OldJobobo/omarchy-waffle-cat-theme
 ```
 
+## What's included
+
+- Hyprland rules and opacity tuning (`hyprland.conf`)
+- Hyprlock styling (`hyprlock.conf`)
+- Waybar colors (`waybar.css`) and layout (`waybar-theme`)
+- Terminals: Alacritty (`alacritty.toml`), Kitty (`kitty.conf`), Ghostty (`ghostty.conf`)
+- Shell/tools: Fish colors (`colors.fish`), fzf (`fzf.fish`)
+- Apps/UI: GTK (`gtk.css`), Chromium (`chromium.theme`), Wofi (`wofi.css`)
+- System tools: btop (`btop.theme`), cava (`cava_theme`), mako (`mako.ini`)
+- Extras: Steam (`steam.css`), Vencord (`vencord.theme.css`), SwayOSD (`swayosd.css`), Walker (`walker.css`), Warp (`warp.yaml`), Zed (`zed.json`, `aether.zed.json`, `aether.override.css`), icons (`icons.theme`)
+
 ## Wallpapers
 
 <table>
   <tr>
-    <td><img src="backgrounds/1_waffle.png" width="220" alt="1_waffle"></td>
+    <td><img src="backgrounds/1_waffles.png" width="220" alt="1_waffles"></td>
     <td><img src="backgrounds/2_cat.jpg" width="220" alt="2_cat"></td>
     <td><img src="backgrounds/3_vending_machine_girl.jpg" width="220" alt="3_vending_machine_girl"></td>
   </tr>
@@ -47,6 +56,10 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-waffle-cat-theme
   <tr>
     <td><img src="backgrounds/16_helmet_girl.png" width="220" alt="16_helmet_girl"></td>
     <td><img src="backgrounds/17_bby9mjvbr41a1.webp" width="220" alt="17_bby9mjvbr41a1"></td>
-    <td></td>
+    <td><img src="backgrounds/GETECH2_This_illustration_is_in_the_lofi_anime_style_depicting__c4c2eeda-6032-43b9-9c02-2c98d1fbf912.png" width="220" alt="GETECH2 lofi anime illustration"></td>
   </tr>
 </table>
+
+## Attribution
+
+- Waffle Cat colorscheme: https://github.com/OldJobobo/waffle-cat
