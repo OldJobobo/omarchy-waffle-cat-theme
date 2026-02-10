@@ -255,6 +255,17 @@ li[class*="containerDefault"][class*="modeUnread"] [class*="name"] *,
   border-color: inherit !important;
 }
 
+/* Post style input padding */
+[class*="textAreaForPostCreation"] {
+  padding: 8px 10px !important;
+  box-sizing: border-box !important;
+}
+
+/* Post media button spacing */
+[class*="container__94439"] {
+  margin-left: 8px !important;
+}
+
 /* Mention highlight */
 div[class*="mentioned"],
 li[class*="mentioned"] {
