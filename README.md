@@ -27,38 +27,14 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-waffle-cat-theme
 
 ## Wallpapers
 
-<table>
-  <tr>
-    <td><img src="backgrounds/1_waffles.png" width="220" alt="1_waffles"></td>
-    <td><img src="backgrounds/2_cat.jpg" width="220" alt="2_cat"></td>
-    <td><img src="backgrounds/3_vending_machine_girl.jpg" width="220" alt="3_vending_machine_girl"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/4_winged_girl_sunset.jpg" width="220" alt="4_winged_girl_sunset"></td>
-    <td><img src="backgrounds/5_glowing_rectangle.jpg" width="220" alt="5_glowing_rectangle"></td>
-    <td><img src="backgrounds/6_cozy_desk_room.jpg" width="220" alt="6_cozy_desk_room"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/7_rust_cookbook_girl.jpg" width="220" alt="7_rust_cookbook_girl"></td>
-    <td><img src="backgrounds/8_sunset_field.jpg" width="220" alt="8_sunset_field"></td>
-    <td><img src="backgrounds/9_staircase_girl.jpg" width="220" alt="9_staircase_girl"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/10_autumn_camping.png" width="220" alt="10_autumn_camping"></td>
-    <td><img src="backgrounds/11_evening_street_girls-2.jpg" width="220" alt="11_evening_street_girls-2"></td>
-    <td><img src="backgrounds/12_drawing_close_up.jpg" width="220" alt="12_drawing_close_up"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/13_desert_nomads.jpg" width="220" alt="13_desert_nomads"></td>
-    <td><img src="backgrounds/14_pink_dress_girl.jpg" width="220" alt="14_pink_dress_girl"></td>
-    <td><img src="backgrounds/15_pastel_street.jpeg" width="220" alt="15_pastel_street"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/16_helmet_girl.png" width="220" alt="16_helmet_girl"></td>
-    <td><img src="backgrounds/17_bby9mjvbr41a1.webp" width="220" alt="17_bby9mjvbr41a1"></td>
-    <td><img src="backgrounds/GETECH2_This_illustration_is_in_the_lofi_anime_style_depicting__c4c2eeda-6032-43b9-9c02-2c98d1fbf912.png" width="220" alt="GETECH2 lofi anime illustration"></td>
-  </tr>
-</table>
+| | | |
+| --- | --- | --- |
+| ![](backgrounds/0-syrup-stack.png) | ![](backgrounds/1-midnight-mew.jpg) | ![](backgrounds/2-vending-twilight.jpg) |
+| ![](backgrounds/3-ember-wings.jpg) | ![](backgrounds/4-gold-portal.jpg) | ![](backgrounds/5-lantern-desk.jpg) |
+| ![](backgrounds/6-rust-panic.jpg) | ![](backgrounds/7-dusk-archer.jpg) | ![](backgrounds/8-mecha-stairwell.jpg) |
+| ![](backgrounds/9-lakeside-camp.png) | ![](backgrounds/10-homebound-dusk.jpg) | ![](backgrounds/11-hollow-stroke.jpg) |
+| ![](backgrounds/12-dune-caravan.jpg) | ![](backgrounds/13-donut-frenzy.jpg) | ![](backgrounds/14-pastel-hillside.jpeg) |
+| ![](backgrounds/15-aviator-glare.png) | ![](backgrounds/16-nine-eyed-howl.webp) | ![](backgrounds/17-winter-bokeh-cat.png) |
 
 ## Attribution
 
