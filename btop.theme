@@ -1,5 +1,5 @@
 # Waffle Cat btop theme, synchronized with colors.toml.
-theme[main_bg]="#292025"
+theme[main_bg]=""
 theme[main_fg]="#fff4d8"
 theme[title]="#fff4d8"
 theme[hi_fg]="#c87d2a"
