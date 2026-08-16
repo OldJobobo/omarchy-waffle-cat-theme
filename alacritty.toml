@@ -1,28 +1,51 @@
-# Generated from palette/waffle-cat.yaml. Do not edit by hand.
+# Waffle Cat terminal palette, synchronized with colors.toml.
+[window]
+opacity = 0.90
+
 [colors.primary]
 background = "#292025"
-foreground = "#fff3cf"
+foreground = "#fff4d8"
+
+[colors.cursor]
+text = "#292025"
+cursor = "#fffaf0"
+
+[colors.vi_mode_cursor]
+text = "#292025"
+cursor = "#fffaf0"
+
+[colors.search.matches]
+foreground = "#292025"
+background = "#c8964b"
+
+[colors.search.focused_match]
+foreground = "#292025"
+background = "#cf7358"
+
+[colors.footer_bar]
+foreground = "#292025"
+background = "#fff4d8"
+
+[colors.selection]
+text = "#fff4d8"
+background = "#6b5650"
 
 [colors.normal]
 black = "#292025"
-red = "#ff8c68"
-green = "#f0e65a"
-yellow = "#a4a900"
-blue = "#ffbe55"
-magenta = "#c7f3ff"
-cyan = "#c5a0b6"
-white = "#fff3cf"
+red = "#cf7358"
+green = "#9fad68"
+yellow = "#c8964b"
+blue = "#c87d2a"
+magenta = "#c98c97"
+cyan = "#9eb8b2"
+white = "#fff4d8"
 
 [colors.bright]
-black = "#834f36"
-red = "#ff8c68"
-green = "#f0e65a"
-yellow = "#a4a900"
-blue = "#ffbe55"
-magenta = "#c7f3ff"
-cyan = "#c5a0b6"
-white = "#e88f37"
-
-[colors.cursor]
-text = "#834f36"
-cursor = "#f7dd9b"
+black = "#a58c82"
+red = "#e58a70"
+green = "#b9c97f"
+yellow = "#e4c56d"
+blue = "#df9850"
+magenta = "#ddb0b8"
+cyan = "#c2d5d0"
+white = "#fffaf0"

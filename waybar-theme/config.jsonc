@@ -11,7 +11,6 @@
     "custom/updatespacman"
   ],
   "modules-center": [
-    "custom/weather",
     "hyprland/workspaces",
     "idle_inhibitor",
     "custom/update"
@@ -81,13 +80,6 @@
     "signal": 7,
     "interval": 3600
   },
-  "custom/weather": {
-    "format": "{}°F",
-    "tooltip": true,
-    "interval": 3600,
-    "exec": "wttrbar --location \"Duvall, WA\" --main-indicator=temp_F",
-    "return-type": "json"
-  },
   "cpu": {
     "interval": 3,
     "format": "{usage}% 󰍛",
@@ -105,9 +97,9 @@
     "calendar": {
       "mode": "month",
       "format": {
-        "month": "<span color='#ffc76f'><b>{}</b></span>",
-        "weekdays": "<span color='#f6a96b'><b>{}</b></span>",
-        "today": "<span color='#ff4f73'><b>{}</b></span>"
+        "month": "<span color='#e4c56d'><b>{}</b></span>",
+        "weekdays": "<span color='#df9850'><b>{}</b></span>",
+        "today": "<span color='#cf7358'><b>{}</b></span>"
       }
     },
     "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"
@@ -195,7 +187,6 @@
     }
   },
   "backlight": {
-    "device": "intel_backlight",
     "format": "{percent}% {icon}",
     "format-icons": [
       "",

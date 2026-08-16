@@ -7,24 +7,24 @@
 
 /* Dynamic Color Palette */
 @define-color background #292025;
-@define-color foreground #e5d0dc;
+@define-color foreground #fff4d8;
 
 @define-color black #292025;
-@define-color red #3a2d32;
-@define-color green #4a3a40;
-@define-color yellow #7a6a60;
-@define-color blue #b6a78f;
-@define-color magenta #efb159;
-@define-color cyan #f7dd9b;
-@define-color white #fff3cf;
-@define-color bright_black #834f36;
-@define-color bright_red #ff8c68;
-@define-color bright_green #f0e65a;
-@define-color bright_yellow #a4a900;
-@define-color bright_blue #ffbe55;
-@define-color bright_magenta #c7f3ff;
-@define-color bright_cyan #c5a0b6;
-@define-color bright_white #e88f37;
+@define-color red #cf7358;
+@define-color green #9fad68;
+@define-color yellow #c8964b;
+@define-color blue #c87d2a;
+@define-color magenta #c98c97;
+@define-color cyan #9eb8b2;
+@define-color white #fff4d8;
+@define-color bright_black #a58c82;
+@define-color bright_red #e58a70;
+@define-color bright_green #b9c97f;
+@define-color bright_yellow #e4c56d;
+@define-color bright_blue #df9850;
+@define-color bright_magenta #ddb0b8;
+@define-color bright_cyan #c2d5d0;
+@define-color bright_white #fffaf0;
 
 /* Base GTK theme variables */
 @define-color theme_bg_color @background;
@@ -45,8 +45,8 @@
 
 /* Adwaita Color Overrides */
 @define-color accent_bg_color @blue;
-@define-color accent_fg_color @bright_white;
-@define-color accent_color @cyan;
+@define-color accent_fg_color @background;
+@define-color accent_color @blue;
 
 @define-color window_bg_color @background;
 @define-color window_fg_color @foreground;
@@ -59,13 +59,13 @@
 @define-color sidebar_backdrop_color @background;
 @define-color sidebar_shade_color @background;
 
-@define-color headerbar_bg_color alpha(@foreground, 0.05);
+@define-color headerbar_bg_color alpha(@blue, 0.08);
 @define-color headerbar_fg_color @foreground;
 @define-color headerbar_backdrop_color @background;
 @define-color headerbar_shade_color @background;
 @define-color headerbar_border_color alpha(@foreground, 0.15);
 
-@define-color card_bg_color alpha(@foreground, 0.03);
+@define-color card_bg_color alpha(@foreground, 0.04);
 @define-color card_fg_color @foreground;
 @define-color card_shade_color @background;
 
@@ -82,16 +82,16 @@
 @define-color dialog_fg_color @foreground;
 
 @define-color destructive_bg_color @red;
-@define-color destructive_fg_color @bright_white;
+@define-color destructive_fg_color @background;
 
 @define-color success_bg_color @green;
-@define-color success_fg_color @bright_white;
+@define-color success_fg_color @background;
 
 @define-color warning_bg_color @yellow;
-@define-color warning_fg_color @bright_white;
+@define-color warning_fg_color @background;
 
 @define-color error_bg_color @red;
-@define-color error_fg_color @bright_white;
+@define-color error_fg_color @background;
 
 @define-color borders alpha(@foreground, 0.15);
 
@@ -102,10 +102,10 @@
 @define-color menu_bg_color @background;
 @define-color menu_fg_color @foreground;
 
-@define-color entry_bg_color alpha(@foreground, 0.03);
+@define-color entry_bg_color alpha(@foreground, 0.04);
 @define-color entry_fg_color @foreground;
 
-@define-color button_bg_color alpha(@foreground, 0.05);
+@define-color button_bg_color alpha(@blue, 0.1);
 @define-color button_fg_color @foreground;
 
 @define-color tooltip_bg_color @background;
@@ -177,14 +177,13 @@
 @define-color dim_label_color alpha(@foreground, 0.55);
 
 
-/* SVG Icons - recolor to match foreground text */
+/* SVG icons — normalize dark sources, then warm them toward the cream foreground. */
 .svg-icon {
-    filter: invert(79%) sepia(18%) saturate(611%) hue-rotate(192deg)
-        brightness(103%) contrast(94%);
+    filter: brightness(0) saturate(100%) invert(96%) sepia(24%)
+        saturate(520%) hue-rotate(334deg) brightness(105%) contrast(102%);
 }
 
 /* Sharp corners, Hyprland-inspired */
 * {
     border-radius: 0;
 }
-
