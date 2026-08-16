@@ -1,49 +1,48 @@
-@define-color bg #292025;
-@define-color fg #f7dd9b;
-@define-color gray1 #3a2d32;
-@define-color gray2 #4a3a40;
-@define-color gray3 #7a6a60;
-@define-color gray4 #b6a78f;
-@define-color gray5 #efb159;
-@define-color fg_bright #fff3cf;
+@define-color background #292025;
+@define-color surface #362d30;
+@define-color selection #6b5650;
+@define-color foreground #fff4d8;
+@define-color muted #a58c82;
+@define-color accent #c87d2a;
 
 window {
-    background-color: @bg;
-    border: 2px solid @gray3;
+  background-color: alpha(@surface, 0.94);
+  color: @foreground;
+  border: 1px solid alpha(@accent, 0.42);
+  border-radius: 14px;
+  padding: 12px;
 }
 
 input {
-    background-color: @bg;
-    color: @fg;
-    border: 1px solid @gray2;
-}
-
-input:selected {
-    background-color: @gray1;
-    color: @fg_bright;
+  background-color: alpha(@background, 0.82);
+  color: @foreground;
+  border: 1px solid alpha(@accent, 0.34);
+  border-radius: 10px;
+  padding: 10px 14px;
 }
 
 #entry {
-    color: @fg;
-    background-color: @bg;
-    padding: 5px;
-    margin: 2px;
+  color: @muted;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 7px 10px;
+  margin: 2px;
 }
 
 #entry:selected {
-    background-color: @gray1;
-    color: @fg_bright;
+  background-color: @selection;
+  color: @foreground;
 }
 
 scrollbar {
-    background-color: @bg;
+  background-color: transparent;
 }
 
 scrollbar slider {
-    background-color: @gray2;
-    border-radius: 5px;
+  background-color: alpha(@muted, 0.55);
+  border-radius: 999px;
 }
 
 scrollbar slider:hover {
-    background-color: @gray3;
+  background-color: @accent;
 }

@@ -1,27 +1,26 @@
-name: Aether
-accent: "#fece6e"
-cursor: "#fece6e"
+name: Waffle Cat
+accent: "#c87d2a"
+cursor: "#fffaf0"
 background: "#292025"
-foreground: "#fff3cf"
+foreground: "#fff4d8"
 details: darker
 
 terminal_colors:
   normal:
     black:   "#292025"
-    red:     "#ff8c68"
-    green:   "#f0e65a"
-    yellow:  "#a4a900"
-    blue:    "#ffbe55"
-    magenta: "#c7f3ff"
-    cyan:    "#c5a0b6"
-    white:   "#fff3cf"
+    red:     "#cf7358"
+    green:   "#9fad68"
+    yellow:  "#c8964b"
+    blue:    "#c87d2a"
+    magenta: "#c98c97"
+    cyan:    "#9eb8b2"
+    white:   "#fff4d8"
   bright:
-    black:   "#834f36"
-    red:     "#ff8c68"
-    green:   "#f0e65a"
-    yellow:  "#a4a900"
-    blue:    "#ffbe55"
-    magenta: "#c7f3ff"
-    cyan:    "#c5a0b6"
-    white:   "#fff3cf"
-
+    black:   "#a58c82"
+    red:     "#e58a70"
+    green:   "#b9c97f"
+    yellow:  "#e4c56d"
+    blue:    "#df9850"
+    magenta: "#ddb0b8"
+    cyan:    "#c2d5d0"
+    white:   "#fffaf0"

@@ -5,29 +5,29 @@
 
 /* Dynamic color palette from Aether */
 @define-color background #292025;
-@define-color foreground #fff3cf;
+@define-color foreground #fff4d8;
 
 @define-color black #292025;
-@define-color red #ff8c68;
-@define-color green #f0e65a;
-@define-color yellow #a4a900;
-@define-color blue #ffbe55;
-@define-color magenta #c7f3ff;
-@define-color cyan #c5a0b6;
-@define-color white #fff3cf;
-@define-color bright_black #834f36;
-@define-color bright_red #ff8c68;
-@define-color bright_green #f0e65a;
-@define-color bright_yellow #a4a900;
-@define-color bright_blue #ffbe55;
-@define-color bright_magenta #c7f3ff;
-@define-color bright_cyan #c5a0b6;
-@define-color bright_white #e88f37;
+@define-color red #cf7358;
+@define-color green #9fad68;
+@define-color yellow #c8964b;
+@define-color blue #c87d2a;
+@define-color magenta #c98c97;
+@define-color cyan #9eb8b2;
+@define-color white #fff4d8;
+@define-color bright_black #a58c82;
+@define-color bright_red #e58a70;
+@define-color bright_green #b9c97f;
+@define-color bright_yellow #e4c56d;
+@define-color bright_blue #df9850;
+@define-color bright_magenta #ddb0b8;
+@define-color bright_cyan #c2d5d0;
+@define-color bright_white #fffaf0;
 
 /* Adwaita Color Overrides */
 @define-color accent_bg_color @blue;
 @define-color accent_fg_color @background;
-@define-color accent_color @cyan;
+@define-color accent_color @blue;
 
 @define-color window_bg_color @background;
 @define-color window_fg_color @foreground;
@@ -181,4 +181,3 @@ toast button.circular.flat.image-button:hover {
 * {
     border-radius: 0;
 }
-

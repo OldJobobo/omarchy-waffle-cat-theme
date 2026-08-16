@@ -1,0 +1,34 @@
+version = 1
+name = "Waffle Cat breakfast desk"
+theme_name = "Waffle Cat"
+canvas = [2560, 1440]
+wallpaper = "{theme}/backgrounds/1-golden-lattice.jpg"
+workspace = "90"
+monitor = "focused"
+focus = "nvim"
+settle_seconds = 3.0
+terminal = "foot"
+
+[[windows]]
+id = "nvim"
+cwd = "{templates}"
+command = ["nvim", "rust-preview-demo.rs", "+normal! 12Gzz"]
+rect = [90, 100, 1080, 780]
+
+[[windows]]
+id = "btop"
+cwd = "{theme}"
+command = ["btop"]
+rect = [1390, 100, 1080, 610]
+
+[[windows]]
+id = "fastfetch"
+cwd = "{theme}"
+command = ["bash", "-lc", "env TERM=xterm-256color bash -ic 'exit' 2>/dev/null | tail -n 14; tput civis; exec sleep infinity"]
+rect = [1580, 760, 840, 350]
+
+[[windows]]
+id = "cava"
+cwd = "{theme}"
+command = ["bash", "-lc", "cava; exec bash"]
+rect = [430, 1170, 1600, 190]

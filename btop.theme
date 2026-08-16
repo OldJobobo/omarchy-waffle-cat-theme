@@ -1,70 +1,54 @@
-# Main background, empty for terminal default, need to be empty if you want transparent background
+# Waffle Cat btop theme, synchronized with colors.toml.
 theme[main_bg]="#292025"
+theme[main_fg]="#fff4d8"
+theme[title]="#fff4d8"
+theme[hi_fg]="#c87d2a"
+theme[selected_bg]="#6b5650"
+theme[selected_fg]="#c87d2a"
+theme[inactive_fg]="#a58c82"
+theme[graph_text]="#fff4d8"
+theme[meter_bg]="#6b5650"
+theme[proc_misc]="#fff4d8"
 
-# Main text color
-theme[main_fg]="#f7dd9b"
+theme[cpu_box]="#c98c97"
+theme[mem_box]="#9fad68"
+theme[net_box]="#cf7358"
+theme[proc_box]="#c87d2a"
+theme[div_line]="#a58c82"
 
-# Title color for boxes
-theme[title]="#f0e65a"
+theme[temp_start]="#9fad68"
+theme[temp_mid]="#c8964b"
+theme[temp_end]="#cf7358"
+theme[cpu_start]="#9eb8b2"
+theme[cpu_mid]="#c87d2a"
+theme[cpu_end]="#c98c97"
+theme[free_start]="#c98c97"
+theme[free_mid]="#c87d2a"
+theme[free_end]="#9eb8b2"
+theme[cached_start]="#c87d2a"
+theme[cached_mid]="#9eb8b2"
+theme[cached_end]="#c98c97"
+theme[available_start]="#c8964b"
+theme[available_mid]="#cf7358"
+theme[available_end]="#cf7358"
+theme[used_start]="#9fad68"
+theme[used_mid]="#9eb8b2"
+theme[used_end]="#c87d2a"
+theme[download_start]="#c8964b"
+theme[download_mid]="#cf7358"
+theme[download_end]="#cf7358"
+theme[upload_start]="#9fad68"
+theme[upload_mid]="#9eb8b2"
+theme[upload_end]="#c87d2a"
+theme[process_start]="#9eb8b2"
+theme[process_mid]="#c87d2a"
+theme[process_end]="#c98c97"
 
-# Highlight color for keyboard shortcuts
-theme[hi_fg]="#ff8c68"
-
-# Background color of selected item in processes box
-theme[selected_bg]="#b6a78f"
-
-# Foreground color of selected item in processes box
-theme[selected_fg]="#4a3a40"
-
-# Color of inactive/disabled text
-theme[inactive_fg]="#7a6a60"
-
-# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
-theme[proc_misc]="#c5a0b6"
-
-# Box outline and divider line color
-theme[cpu_box]="#a4a900"
-theme[mem_box]="#a4a900"
-theme[net_box]="#a4a900"
-theme[proc_box]="#a4a900"
-theme[div_line]="#c5a0b6"
-
-# Gradient for all meters and graphs
-theme[temp_start]="#efb159"
-theme[temp_mid]="#f7dd9b"
-theme[temp_end]="#fff3cf"
-
-
-theme[cpu_start]="#efb159"
-theme[cpu_mid]="#f7dd9b"
-theme[cpu_end]="#fff3cf"
-
-
-theme[free_start]="#efb159"
-theme[free_mid]="#f7dd9b"
-theme[free_end]="#fff3cf"
-
-
-theme[cached_start]="#efb159"
-theme[cached_mid]="#f7dd9b"
-theme[cached_end]="#fff3cf"
-
-
-theme[available_start]="#efb159"
-theme[available_mid]="#f7dd9b"
-theme[available_end]="#fff3cf"
-
-
-theme[used_start]="#efb159"
-theme[used_mid]="#f7dd9b"
-theme[used_end]="#fff3cf"
-
-
-theme[download_start]="#efb159"
-theme[download_mid]="#f7dd9b"
-theme[download_end]="#fff3cf"
-
-
-theme[upload_start]="#efb159"
-theme[upload_mid]="#f7dd9b"
-theme[upload_end]="#fff3cf"
+theme[gradient_color_0]="#292025"
+theme[gradient_color_1]="#362d30"
+theme[gradient_color_2]="#6b5650"
+theme[gradient_color_3]="#a58c82"
+theme[gradient_color_4]="#a58c82"
+theme[gradient_color_5]="#fff4d8"
+theme[gradient_color_6]="#fff4d8"
+theme[gradient_color_7]="#fffaf0"

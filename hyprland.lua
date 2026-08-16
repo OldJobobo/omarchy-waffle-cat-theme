@@ -2,7 +2,7 @@
 -- Source: /home/oldjobobo/Projects/themes/omarchy-waffle-cat-theme/hyprland.conf
 
 local activeBorderColor = {
-  colors = { "rgba(c87d2af5)", "rgba(f3dda0f5)" },
+  colors = { "rgba(c87d2af5)", "rgba(fffaf0f5)" },
   angle = 45,
 }
 local inactiveBorderColor = "rgba(6b5650f5)"
@@ -20,6 +20,7 @@ hl.config({
   group = {
     col = {
       border_active = activeBorderColor,
+      border_inactive = inactiveBorderColor,
     },
   },
   decoration = {

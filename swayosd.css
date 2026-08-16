@@ -1,28 +1,62 @@
 @define-color background-color #292025;
-@define-color border-color #c5a0b6;
-@define-color label #e5d0dc;
-@define-color image #e5d0dc;
-@define-color progress #caaf00;
+@define-color border-color #c87d2a;
+@define-color surface-color #362d30;
+@define-color surface-soft #6b5650;
+@define-color label #fff4d8;
+@define-color image #fff4d8;
+@define-color progress #fffaf0;
+@define-color progress-track #6b5650;
 
 /* Cancel out Omarchy settings */
 window:not(:backdrop),
 window:backdrop {
     border: none;
     border-width: 0;
-    border-radius: 24px;
+    border-radius: 22px;
     background-color: transparent;
     box-shadow: none;
-    padding: 12px;
+    padding: 18px;
 }
 
 
 /* Draw a new background */
 window:not(:backdrop) #container,
 window:backdrop #container {
-    border: 2px solid @border-color;
-    border-radius: 16px;
-    background-color: alpha(@background-color, 0.8);
-    padding: 12px;
+    border: 1px solid alpha(@border-color, 0.42);
+    border-radius: 18px;
+    background-color: alpha(@surface-color, 0.94);
+    padding: 18px 20px;
     background-clip: padding-box;
-    box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.58);
+}
+
+window:not(:backdrop) image,
+window:backdrop image {
+    color: @image;
+}
+
+window:not(:backdrop) label,
+window:backdrop label {
+    color: @label;
+}
+
+window:not(:backdrop) progressbar,
+window:backdrop progressbar {
+    min-height: 12px;
+    margin-top: 6px;
+}
+
+window:not(:backdrop) progressbar trough,
+window:backdrop progressbar trough {
+    background-color: alpha(@progress-track, 0.55);
+    border-radius: 999px;
+    min-height: 12px;
+}
+
+window:not(:backdrop) progressbar progress,
+window:backdrop progressbar progress {
+    background-image: linear-gradient(90deg, alpha(@border-color, 0.82), alpha(@progress, 0.98));
+    border-radius: 999px;
+    min-height: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 244, 216, 0.08);
 }
